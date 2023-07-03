@@ -49,13 +49,16 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
               padding: const EdgeInsets.all(20),
               child: Column(
                 children: [
-                  Image.asset(
-                    "assets/images/logo.png",
-                    height: 100,
-                    width: 100,
+                  Container(
+
+                    child: CircleAvatar(
+                      minRadius: 50,
+                      maxRadius: 50,
+                      backgroundImage: AssetImage("assets/images/logo11.png") ,
+                    ),
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 30,
                   ),
                   TextFormField(
                     controller: _emailController,
@@ -75,12 +78,13 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                     ),
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 20,
                   ),
                   SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
                         style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all(Colors.blue.shade900),
                           shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: BorderSide(color: Colors.blue))),
                           padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(vertical: 20)),
                         ),
@@ -107,8 +111,8 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                             Navigator.of(context).pop();
                           },
                           child: Text(
-                            "Sign In",
-                            style: TextStyle(color: Colors.blue),
+                            " Sign In",
+                            style: TextStyle(color: Colors.blue.shade900),
                           ))
                     ],
                   ),
