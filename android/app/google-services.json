@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "886735367464",
+    "project_id": "diva-s-fashion-afeff",
+    "storage_bucket": "diva-s-fashion-afeff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886735367464:android:d13ae610f3d071ecfa741d",
+        "android_client_info": {
+          "package_name": "com.example.n_baz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886735367464-q88jre3rovu04lln5u5922p47fchgqdm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw0KxGBAV12tlFB4Fsmd5dmqaCwJFqe_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886735367464-q88jre3rovu04lln5u5922p47fchgqdm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
