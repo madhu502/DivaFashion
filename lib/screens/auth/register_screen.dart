@@ -79,12 +79,15 @@ class _RegisterScreenState extends State<RegisterScreen> {
               padding: EdgeInsets.all(20),
               child: Column(
                 children: [
-                  Image.asset(
-                    "assets/images/logo.png",
-                    height: 100,
-                    width: 100,
+                  Container(
+
+                    child: CircleAvatar(
+                      minRadius: 50,
+                      maxRadius: 50,
+                      backgroundImage: AssetImage("assets/images/logo11.png") ,
+                    ),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 30,),
                   TextFormField(
                     controller: _nameController,
                     validator: ValidateSignup.name,
@@ -112,7 +115,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       TextStyle(fontFamily: 'WorkSansSemiBold', fontSize: 17.0),
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 15,),
                   TextFormField(
                     controller: _phoneNumberController,
                     validator: ValidateSignup.phone,
@@ -140,7 +143,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       TextStyle(fontFamily: 'WorkSansSemiBold', fontSize: 17.0),
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 15,),
                   TextFormField(
                     controller: _usernameController,
                     validator: ValidateSignup.username,
@@ -168,7 +171,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       TextStyle(fontFamily: 'WorkSansSemiBold', fontSize: 17.0),
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 15,),
                   TextFormField(
                     controller: _emailController,
                     keyboardType: TextInputType.emailAddress,
@@ -196,7 +199,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       TextStyle(fontFamily: 'WorkSansSemiBold', fontSize: 17.0),
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 15,),
                   TextFormField(
                     controller: _passwordController,
                     obscureText: _obscureTextPassword,
@@ -237,7 +240,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     ),
                   ),
 
-                  SizedBox(height: 10,),
+                  SizedBox(height: 15,),
                   TextFormField(
                     controller: _confirmPasswordController,
                     obscureText: _obscureTextPasswordConfirm,
@@ -282,6 +285,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     width: double.infinity,
                     child: ElevatedButton(
                         style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all(Colors.blue.shade900),
                           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                               RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20),
@@ -293,7 +297,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         onPressed: (){
                             register();
                         }, child: Text("Sign Up", style: TextStyle(
-                        fontSize: 20
+
+                        fontSize: 20,
                     ),)),
                   ),
                   SizedBox(height: 20,),
@@ -307,7 +312,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         onTap: (){
                           Navigator.of(context).pop();
                         },
-                          child: Text("Sign in", style: TextStyle(color: Colors.blue),))
+                          child: Text(" Sign in", style: TextStyle(color: Colors.blue.shade900),))
                     ],
                   ),
 
