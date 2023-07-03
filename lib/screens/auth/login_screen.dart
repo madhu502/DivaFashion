@@ -64,13 +64,22 @@ class _LoginScreenState extends State<LoginScreen> {
               padding: EdgeInsets.all(20),
               child: Column(
                 children: [
-                  Image.asset(
-                    "assets/images/logo1.png",
-                    height: 100,
-                    width: 100,
+                  Container(
+                   
+                    child: CircleAvatar(
+                      minRadius: 50,
+                      maxRadius: 50,
+                      backgroundImage: AssetImage("assets/images/logo11.png") ,
+                    ),
                   ),
+
+                  // Image.asset(
+                  //   "assets/images/logo11.png",
+                  //   height: 100,
+                  //   width: 100,
+                  // ),
                   SizedBox(
-                    height: 10,
+                    height: 30,
                   ),
                   TextFormField(
                     controller: _emailController,
