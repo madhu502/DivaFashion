@@ -114,7 +114,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black54,
+        backgroundColor: Colors.blue.shade900,
         title: Text("Add a product"),
       ),
       body: Consumer<CategoryViewModel>(
@@ -267,11 +267,11 @@ class _AddProductScreenState extends State<AddProductScreen> {
                       width: double.infinity,
                       child: ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(Colors.orange) ,
+                            backgroundColor: MaterialStateProperty.all<Color>(Colors.cyanAccent) ,
                             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20),
-                                    side: BorderSide(color: Colors.orange)
+                                    side: BorderSide(color: Colors.cyanAccent)
                                 )
                             ),
                             padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(vertical: 10)),

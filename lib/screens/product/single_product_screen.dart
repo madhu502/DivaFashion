@@ -93,7 +93,7 @@ class _SingleProductBodyState extends State<SingleProductBody> {
                 )
               : Scaffold(
                   appBar: AppBar(
-                    backgroundColor: Colors.black54,
+                    backgroundColor: Colors.blue.shade900,
                     actions: [
                       Builder(builder: (context) {
                         FavoriteModel? isFavorite;

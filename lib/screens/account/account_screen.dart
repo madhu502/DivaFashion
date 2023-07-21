@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:n_baz/services/local_notification_service.dart';
 import 'package:provider/provider.dart';
 
-import '../../viewmodels/auth_viewmodel.dart';
-import '../../viewmodels/global_ui_viewmodel.dart';
+import 'package:n_baz/viewmodels/auth_viewmodel.dart';
+import 'package:n_baz/viewmodels/global_ui_viewmodel.dart';
 
 class AccountScreen extends StatefulWidget {
   const AccountScreen({Key? key}) : super(key: key);
@@ -47,10 +47,13 @@ class _AccountScreenState extends State<AccountScreen> {
           SizedBox(
             height: 10,
           ),
-          Image.asset(
-            "assets/images/logo.png",
-            height: 100,
-            width: 100,
+          Container(
+
+            child: CircleAvatar(
+              minRadius: 50,
+              maxRadius: 50,
+              backgroundImage: AssetImage("assets/images/logo11.png") ,
+            ),
           ),
           SizedBox(
             height: 10,

@@ -47,7 +47,7 @@ class _MyProductScreenState extends State<MyProductScreen> {
           },
         ),
         appBar: AppBar(
-          backgroundColor: Colors.black54,
+          backgroundColor: Colors.blue.shade900,
           title: Text("My Products"),
         ),
         body: RefreshIndicator(
