@@ -151,9 +151,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Text("Diva's Fashion",
                 style: TextStyle(
-                  fontSize: 30,
+                  fontSize: 27,
                   fontWeight: FontWeight.bold,
-                  color: Colors.amberAccent,
+                  color: Colors.blue.shade900,
                 ),
                 textAlign:TextAlign.right,),
 
