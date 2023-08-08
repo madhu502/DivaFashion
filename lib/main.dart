@@ -21,7 +21,8 @@ import 'package:provider/provider.dart';
 import 'firebase_options.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();await Firebase.initializeApp(
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
   NotificationService.initialize();
@@ -29,7 +30,13 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  // MaterialColor myBlueSwatch = MaterialColor(
+  // 0xFF2196F3, // Primary color value
+  // <int, Color>{900: Color(0xFF0D47A1), // Shade 900
+  // },
+// );
+
+MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
@@ -55,7 +62,7 @@ class MyApp extends StatelessWidget {
             }
             return MaterialApp(
               debugShowCheckedModeBanner: false,
-              title: 'Flutter Demo',
+              title: "Diva's Fashion",
               theme: ThemeData(
                 // This is the theme of your application.
                 //
@@ -66,7 +73,7 @@ class MyApp extends StatelessWidget {
                 // or simply save your changes to "hot reload" in a Flutter IDE).
                 // Notice that the counter didn't reset back to zero; the application
                 // is not restarted.
-                primarySwatch: Colors.blue,
+                primarySwatch:Colors.blue,
               ),
               initialRoute: "/splash",
               routes: {

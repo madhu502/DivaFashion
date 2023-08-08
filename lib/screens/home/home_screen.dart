@@ -59,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
 
                         Image.asset(
-                          "assets/images/banner.jpg",
+                          "assets/images/banner1.png",
                           height: 200,
                           width: double.infinity,
                           fit: BoxFit.fill,
@@ -137,13 +137,36 @@ class _HomeScreenState extends State<HomeScreen> {
             padding: EdgeInsets.all(15),
             child: Row(
               children: [
-                Expanded(child: Container()),
-                Expanded(child: Image.asset("assets/images/logo.png", height: 50, width: 50,)),
+                Expanded(child: Container(
+                  alignment: Alignment.topLeft,
+
+                  child: CircleAvatar(
+                    minRadius: 20,
+                    maxRadius: 20,
+                    backgroundImage: AssetImage("assets/images/logo11.png") ,
+                  ),
+                ),
+                ),
+                Text("Diva's Fashion",
+                style: TextStyle(
+                  fontSize: 27,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue.shade900,
+                ),
+                textAlign:TextAlign.right,),
+
+
                 Expanded(
                     child: Align(
-                      alignment: Alignment.centerRight,
+                      alignment: Alignment.topLeft,
                         child: Container()
                         // Icon(Icons.search, size: 30,)
+                    )),
+                Expanded(
+                    child: Align(
+                        alignment: Alignment.topLeft,
+                        child: Container()
+                      // Icon(Icons.search, size: 30,)
                     )),
               ],
             )));
@@ -231,7 +254,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     fit: BoxFit.cover,
                     errorBuilder: (BuildContext context, Object exception, StackTrace? stackTrace) {
                       return Image.asset(
-                        'assets/images/logo.png',
+                        'assets/images/logo11.png',
                         height: 300,
                         width: double.infinity,
                         fit: BoxFit.cover,
