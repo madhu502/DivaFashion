@@ -65,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Column(
                 children: [
                   Container(
-                   
+
                     child: CircleAvatar(
                       minRadius: 50,
                       maxRadius: 50,
@@ -73,11 +73,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
 
-                  // Image.asset(
-                  //   "assets/images/logo11.png",
-                  //   height: 100,
-                  //   width: 100,
-                  // ),
+
                   SizedBox(
                     height: 30,
                   ),
@@ -100,7 +96,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 20,
                   ),
                   TextFormField(
                     controller: _passwordController,
@@ -132,7 +128,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 20,
                   ),
                   Align(
                       alignment: Alignment.centerRight,
@@ -142,17 +138,19 @@ class _LoginScreenState extends State<LoginScreen> {
                         },
                         child: Text(
                           "Forgot password?",
-                          style: TextStyle(color: Colors.grey.shade800),
+                          style: TextStyle(color: Colors.blue.shade900),
                         ),
                       )),
                   SizedBox(
                     height: 10,
                   ),
                   Container(
+
                     width: double.infinity,
                     child: ElevatedButton(
                         style: ButtonStyle(
-                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: BorderSide(color: Colors.blue))),
+                          backgroundColor: MaterialStateProperty.all(Colors.blue.shade900),
+                          shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20), side: BorderSide(color: Colors.blue.shade900))),
                           padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(vertical: 20)),
                         ),
                         onPressed: () {
@@ -178,8 +176,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             Navigator.of(context).pushNamed("/register");
                           },
                           child: Text(
-                            "Sign up",
-                            style: TextStyle(color: Colors.blue),
+                            " Sign up",
+                            style: TextStyle(color: Colors.blue.shade900),
                           ))
                     ],
                   ),
