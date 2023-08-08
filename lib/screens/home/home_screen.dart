@@ -1,6 +1,5 @@
-import 'dart:ffi';
 
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:n_baz/models/category_model.dart';
 import 'package:n_baz/models/product_model.dart';
@@ -9,7 +8,6 @@ import 'package:n_baz/viewmodels/category_viewmodel.dart';
 import 'package:n_baz/viewmodels/product_viewmodel.dart';
 import 'package:provider/provider.dart';
 
-import '../../viewmodels/global_ui_viewmodel.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
