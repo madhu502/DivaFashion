@@ -1,12 +1,11 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:n_baz/models/category_model.dart';
 import 'package:n_baz/models/product_model.dart';
 
 
-import '../repositories/category_repositories.dart';
-import '../repositories/product_repositories.dart';
+import 'package:n_baz/repositories/category_repositories.dart';
+import 'package:n_baz/repositories/product_repositories.dart';
 
 class SingleCategoryViewModel with ChangeNotifier {
   CategoryRepository _categoryRepository = CategoryRepository();
