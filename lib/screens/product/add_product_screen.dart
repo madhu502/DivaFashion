@@ -250,7 +250,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
                             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                                 RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(20),
-                                    side: BorderSide(color: Colors.blue)
+                                    side: BorderSide(color: Colors.blue.shade900)
                                 )
                             ),
                             padding: MaterialStateProperty.all<EdgeInsets>(EdgeInsets.symmetric(vertical: 10)),
